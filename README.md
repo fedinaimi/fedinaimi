@@ -4,7 +4,7 @@
 
 ### Software Engineer | Health Tech Enthusiast | Founder of Elepzia 🚀
 
-Welcome to my GitHub profile! I'm a passionate software engineer deeply engaged in health tech innovation. As the founder of [Elepzia](https://www.elepzia.com), I strive to leverage technology to enhance healthcare solutions, including projects like **EpiSafe**, a predictive system for epileptic seizures.
+Welcome to my GitHub profile! I'm a passionate software engineer deeply engaged in health tech innovation. As the founder of [Elepzia]([https://www.elepzia.com](https://www.linkedin.com/company/elepzia/)), I strive to leverage technology to enhance healthcare solutions, including projects like **EpiSafe**, a predictive system for epileptic seizures.
 
 ---
 
