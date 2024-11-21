@@ -1,6 +1,4 @@
-Based on your professional experience and technical skills, here's an updated **GitHub README** profile that highlights your achievements and projects effectively:
 
----
 
 # Hi, I'm Fedi Naimi 👋
 
@@ -72,4 +70,3 @@ Welcome to my GitHub profile! I'm a passionate software engineer deeply engaged 
 
 ---
 
-Let me know if you need further personalization!
