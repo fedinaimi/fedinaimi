@@ -1,87 +1,87 @@
-# 🚀 Hi, I'm Fedi Naimi
+# Fedi Naimi
 
-### CTO @ Prospecter | Founder @ Wayloom  
-AI-Native SaaS Builder | Multi-Agent Systems | Full-Stack Architect
+### CTO @ Prospecter · Founder @ Wayloom  
+SaaS Architect · AI-Powered Platforms · System Builder
 
-I build AI-native infrastructure companies.
+I build scalable software companies and production-grade SaaS infrastructure.
 
-Currently:
-- 🟣 **CTO of Prospecter** — AI-powered lead intelligence & outreach automation platform.
-- 🔵 **Founder of Wayloom** — programmable cognitive assessment infrastructure for clinicians and researchers.
+Currently leading:
 
-I design and ship production-grade systems across SaaS, AI agents, and multi-tenant platforms — from architecture to deployment.
+🟣 **Prospecter** — AI-powered lead intelligence & outreach automation  
+🔵 **Wayloom** — Digital cognitive testing infrastructure for clinicians & researchers  
 
----
-
-## 🧠 What I Build
-
-- AI-powered SaaS platforms  
-- Multi-agent LLM systems (LangGraph)  
-- Multi-tenant architectures with RBAC  
-- Stripe-based subscription systems  
-- Production-ready full-stack applications  
-
-I focus on building systems that scale — not just features.
+I focus on building systems that scale — clean architecture, strong data models, and reliable infrastructure.
 
 ---
 
-## 🔥 Current Projects
+## What I Do
 
-### 🟣 Prospecter
-AI-native sales infrastructure combining:
-- ICP modeling  
-- Deep lead discovery  
-- LLM-powered qualification agents  
-- Automated outreach workflows  
-- Multi-tenant SaaS dashboard  
-
-**Stack:** Next.js · NestJS · TypeScript · PostgreSQL · Prisma · Stripe · Docker  
+• Architect multi-tenant SaaS platforms  
+• Design scalable backend systems  
+• Build subscription & billing infrastructure (Stripe)  
+• Deploy production systems (Docker · Cloud · CI/CD)  
+• Integrate AI into real-world applications  
 
 ---
 
-### 🔵 Wayloom
-AI-powered cognitive testing infrastructure:
-- Structured test parsing  
-- Clinician-ready scoring engines  
-- Multi-agent reasoning pipelines  
-- Research-grade digital assessment tools  
+## Core Stack
 
-**Stack:** TypeScript · Node.js · LangGraph · PostgreSQL · Azure  
-
----
-
-## 🏗 Tech Stack
-
-**Core:**  
 TypeScript · Node.js · Next.js · NestJS  
-
-**Database:**  
 PostgreSQL · Prisma · MongoDB  
-
-**AI & Systems:**  
-LangGraph · LLM Agents · Structured Parsing · Multi-Agent Orchestration  
-
-**Infrastructure:**  
-Docker · Azure · AWS · GitHub Actions · Stripe  
+Docker · Azure · AWS · GitHub Actions  
 
 ---
 
-## 🎯 Focus Areas
+## Platforms & Presence
 
-- AI Infrastructure  
-- SaaS Architecture  
-- Health Tech Systems  
-- Automation & Intelligent Workflows  
-
----
-
-## 📩 Connect With Me
-
-- 💼 LinkedIn: https://www.linkedin.com/in/fedi-naimi-035753198  
-- 🧠 Portfolio: https://fnc-lab.vercel.app  
-- 🟣 Prospecter: https://prospecter.io  
-- 🔵 Wayloom: https://wayloom-ai.com  
+🌐 Portfolio → https://fnc-lab.vercel.app  
+🟣 Prospecter → https://prospecter.io  
+🔵 Wayloom → https://wayloom-ai.com  
+💼 LinkedIn → https://www.linkedin.com/in/fedi-naimi-035753198  
 
 ---
 
-> Building ambitious systems at the intersection of AI, health, and automation.
+# GitHub Overview
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=fedinaimi&show_icons=true&hide_border=true&rank_icon=github" height="160"/>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=fedinaimi&layout=compact&hide_border=true" height="160"/>
+</p>
+
+---
+
+## Contribution Activity
+
+<p align="center">
+  <img src="https://streak-stats.demolab.com?user=fedinaimi&hide_border=true" height="160"/>
+</p>
+
+---
+
+## Contribution Graph
+
+<p align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=fedinaimi&hide_border=true"/>
+</p>
+
+---
+
+## Organization Activity (if public)
+
+<!-- Replace with exact org names -->
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=prospecter&show_icons=true&hide_border=true" height="140"/>
+  <img src="https://github-readme-stats.vercel.app/api?username=wayloom-ai&show_icons=true&hide_border=true" height="140"/>
+</p>
+
+---
+
+## Signals
+
+![Profile Views](https://komarev.com/ghpvc/?username=fedinaimi&color=blue&style=flat-square)
+![Followers](https://img.shields.io/github/followers/fedinaimi?style=flat-square)
+![Stars](https://img.shields.io/github/stars/fedinaimi?affiliations=OWNER%2CCOLLABORATOR&style=flat-square)
+
+---
+
+> Building infrastructure at the intersection of SaaS, AI, and real-world systems.
