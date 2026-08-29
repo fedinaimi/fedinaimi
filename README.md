@@ -1,87 +1,151 @@
+<div align="center">
+
 # Fedi Naimi
 
-### CTO @ Prospecter · Founder @ Wayloom  
-SaaS Architect · AI-Powered Platforms · System Builder
+<a href="https://fnc-lab.vercel.app">
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=20&duration=3200&pause=900&color=8B5CF6&center=true&vCenter=true&width=620&lines=Multi-agent+systems+in+production;LangGraph+%C2%B7+Claude+API+%C2%B7+NestJS+%C2%B7+Next.js;I+ship+the+whole+stack%2C+not+just+the+demo" alt="typing banner" />
+</a>
 
-I build scalable software companies and production-grade SaaS infrastructure.
+<br/>
 
-Currently leading:
+[![Portfolio](https://img.shields.io/badge/Portfolio-fnc--lab-8B5CF6?style=for-the-badge&logo=vercel&logoColor=white)](https://fnc-lab.vercel.app)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/fedi-naimi-035753198)
+[![Email](https://img.shields.io/badge/Email-Reach%20out-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:fedi.naimi20@gmail.com)
+![Profile views](https://komarev.com/ghpvc/?username=fedinaimi&color=8B5CF6&style=for-the-badge&label=Visitors)
 
-🟣 **Prospecter** — AI-powered lead intelligence & outreach automation  
-🔵 **Wayloom** — Digital cognitive testing infrastructure for clinicians & researchers  
-
-I focus on building systems that scale — clean architecture, strong data models, and reliable infrastructure.
-
----
-
-## What I Do
-
-• Architect multi-tenant SaaS platforms  
-• Design scalable backend systems  
-• Build subscription & billing infrastructure (Stripe)  
-• Deploy production systems (Docker · Cloud · CI/CD)  
-• Integrate AI into real-world applications  
+</div>
 
 ---
 
-## Core Stack
+AI systems architect and full-stack engineer. I design agentic pipelines that survive contact with real users: queues, retries, idempotency, rate limits, billing, and the boring reliability work that turns a demo into a product.
 
-TypeScript · Node.js · Next.js · NestJS  
-PostgreSQL · Prisma · MongoDB  
-Docker · Azure · AWS · GitHub Actions  
+M.S. Health Informatics & Bioinformatics, GVSU. Backed by the Anthropic Startup Program, NVIDIA Inception, and NSF I-Corps.
 
----
+<br/>
 
-## Platforms & Presence
+## Currently building
 
-🌐 Portfolio → https://fnc-lab.vercel.app  
-🟣 Prospecter → https://prospecter.io  
-🔵 Wayloom → https://wayloom-ai.com  
-💼 LinkedIn → https://www.linkedin.com/in/fedi-naimi-035753198  
+| Project | What it is | Stack |
+| :--- | :--- | :--- |
+| **[Wayloom](https://wayloom-ai.com)** | Multi-agent platform automating 10+ cognitive assessment tasks, replacing a 60 to 90 minute manual workflow with a self-guided digital flow | `LangGraph` `Next.js` `PostgreSQL` |
+| **[Prospecter](https://prospecter.io)** | Multi-tenant B2B SaaS for AI outbound. Reached 15 paying customers in 20 days from launch | `NestJS` `Claude API` `Redis` `Azure` |
+| **Parlivo** | 4-stage agent pipeline (Analyze, Strategize, Draft, Critique) handling 5k+ interactions per customer per month across 5 channels | `FastAPI` `Gemini` `BullMQ` |
 
----
+<br/>
 
-# GitHub Overview
+## What I actually do
 
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=fedinaimi&show_icons=true&hide_border=true&rank_icon=github" height="160"/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=fedinaimi&layout=compact&hide_border=true" height="160"/>
-</p>
+```text
+Agent orchestration    LangGraph state machines, tool calling, eval harnesses
+Backend architecture   Multi-tenant data models, async job pipelines, DDD
+Reliability            Retry semantics, idempotency keys, rate-limit backoff
+Ship to production     Docker, CI/CD, Stripe billing, observability
+```
 
----
+<br/>
 
-## Contribution Activity
+## Stack
 
-<p align="center">
-  <img src="https://streak-stats.demolab.com?user=fedinaimi&hide_border=true" height="160"/>
-</p>
+<div align="center">
 
----
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![NestJS](https://img.shields.io/badge/NestJS-E0234E?style=flat-square&logo=nestjs&logoColor=white)
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
+![React Native](https://img.shields.io/badge/React_Native-61DAFB?style=flat-square&logo=react&logoColor=black)
 
-## Contribution Graph
+![LangChain](https://img.shields.io/badge/LangGraph-1C3C3C?style=flat-square&logo=langchain&logoColor=white)
+![Anthropic](https://img.shields.io/badge/Claude_API-D97757?style=flat-square&logo=anthropic&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
+![Redis](https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white)
+![Prisma](https://img.shields.io/badge/Prisma-2D3748?style=flat-square&logo=prisma&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white)
 
-<p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=fedinaimi&hide_border=true"/>
-</p>
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
+![Azure](https://img.shields.io/badge/Azure-0078D4?style=flat-square&logo=microsoftazure&logoColor=white)
+![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazonwebservices&logoColor=white)
+![Vercel](https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel&logoColor=white)
+![Stripe](https://img.shields.io/badge/Stripe-635BFF?style=flat-square&logo=stripe&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white)
 
----
+</div>
 
-## Organization Activity (if public)
+<br/>
 
-<!-- Replace with exact org names -->
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=prospecter&show_icons=true&hide_border=true" height="140"/>
-  <img src="https://github-readme-stats.vercel.app/api?username=wayloom-ai&show_icons=true&hide_border=true" height="140"/>
-</p>
+## Featured repositories
 
----
+<!--
+  Replace REPO_ONE / REPO_TWO with your two strongest public repos.
+  Swap the vercel.app host for your self-hosted instance once deployed.
+-->
+<div align="center">
 
-## Signals
+<a href="https://github.com/fedinaimi/REPO_ONE">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/pin/?username=fedinaimi&repo=REPO_ONE&theme=tokyonight&hide_border=true" />
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=fedinaimi&repo=REPO_ONE&hide_border=true" height="120" />
+  </picture>
+</a>
+<a href="https://github.com/fedinaimi/REPO_TWO">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/pin/?username=fedinaimi&repo=REPO_TWO&theme=tokyonight&hide_border=true" />
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=fedinaimi&repo=REPO_TWO&hide_border=true" height="120" />
+  </picture>
+</a>
 
-![Profile Views](https://komarev.com/ghpvc/?username=fedinaimi&color=blue&style=flat-square)
-![Followers](https://img.shields.io/github/followers/fedinaimi?style=flat-square)
-![Stars](https://img.shields.io/github/stars/fedinaimi?affiliations=OWNER%2CCOLLABORATOR&style=flat-square)
+</div>
 
----
+<br/>
 
-> Building infrastructure at the intersection of SaaS, AI, and real-world systems.
+## GitHub
+
+<div align="center">
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=fedinaimi&show_icons=true&hide_border=true&rank_icon=github&include_all_commits=true&count_private=true&theme=tokyonight" />
+  <img src="https://github-readme-stats.vercel.app/api?username=fedinaimi&show_icons=true&hide_border=true&rank_icon=github&include_all_commits=true&count_private=true" height="165" />
+</picture>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=fedinaimi&layout=compact&hide_border=true&langs_count=8&hide=html,css,scss,dockerfile&theme=tokyonight" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=fedinaimi&layout=compact&hide_border=true&langs_count=8&hide=html,css,scss,dockerfile" height="165" />
+</picture>
+
+<br/><br/>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com?user=fedinaimi&hide_border=true&theme=tokyonight" />
+  <img src="https://streak-stats.demolab.com?user=fedinaimi&hide_border=true" height="165" />
+</picture>
+
+</div>
+
+<br/>
+
+## Contribution activity
+
+<div align="center">
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/fedinaimi/fedinaimi/output/snake-dark.svg" />
+  <img alt="contribution snake" src="https://raw.githubusercontent.com/fedinaimi/fedinaimi/output/snake.svg" />
+</picture>
+
+<br/><br/>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-activity-graph.vercel.app/graph?username=fedinaimi&hide_border=true&theme=tokyo-night&area=true" />
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=fedinaimi&hide_border=true&theme=github-light&area=true" />
+</picture>
+
+</div>
+
+<br/>
+
+<div align="center">
+
+**Open to conversations about agentic systems, clinical AI, and anything that has to run reliably at 3am.**
+
+<sub>Most of my strongest work lives in private product repos. Happy to walk through architecture on request.</sub>
+
+</div>
