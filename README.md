@@ -2,9 +2,8 @@
 
 # Fedi Naimi
 
-<!-- If this banner ever shows as a broken image, delete this <a> block. It is the one remaining externally hosted element. -->
 <a href="https://fnc-lab.vercel.app">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=20&duration=3200&pause=900&color=8B5CF6&center=true&vCenter=true&width=620&lines=Multi-agent+systems+in+production;LangGraph+%C2%B7+Claude+API+%C2%B7+NestJS+%C2%B7+Next.js;I+ship+the+whole+stack%2C+not+just+the+demo" alt="Multi-agent systems in production" />
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=20&duration=3400&pause=1000&color=8B5CF6&center=true&vCenter=true&width=680&lines=I+build+agents+that+run+at+3am+without+me;LangGraph+%C2%B7+Claude+API+%C2%B7+NestJS+%C2%B7+Next.js;15+paying+customers+in+the+first+20+days" alt="I build agents that run at 3am without me" />
 </a>
 
 <br/>
@@ -17,9 +16,11 @@
 
 ---
 
-AI systems architect and full-stack engineer. I design agentic pipelines that survive contact with real users: queues, retries, idempotency, rate limits, billing, and the boring reliability work that turns a demo into a product.
+I'm a software engineer in Grand Rapids, Michigan, and I spend most of my time on the unglamorous half of AI products: the queue that has to drain, the retry that has to be idempotent, the third-party API that rate-limits you at the worst possible moment.
 
-M.S. Health Informatics & Bioinformatics, GVSU. Backed by the Anthropic Startup Program, NVIDIA Inception, and NSF I-Corps.
+Demos are easy. I care about the version that still works on day 90, when a paying customer is on the phone.
+
+Right now that means multi-agent systems: LangGraph state machines, Claude and Gemini in the loop, NestJS and FastAPI behind them, and enough observability to know which agent made the bad call. I'm finishing an M.S. in Health Informatics at GVSU, which is how I ended up building clinical assessment tooling — a domain where "the model was confidently wrong" is not an acceptable postmortem.
 
 <br/>
 
@@ -27,9 +28,31 @@ M.S. Health Informatics & Bioinformatics, GVSU. Backed by the Anthropic Startup 
 
 | Project | What it is | Stack |
 | :--- | :--- | :--- |
-| **[Wayloom](https://wayloom-ai.com)** | Multi-agent platform automating 10+ cognitive assessment tasks, replacing a 60 to 90 minute manual workflow with a self-guided digital flow | `LangGraph` `Next.js` `PostgreSQL` |
-| **[Prospecter](https://prospecter.io)** | Multi-tenant B2B SaaS for AI outbound. Reached 15 paying customers in 20 days from launch | `NestJS` `Claude API` `Redis` `Azure` |
-| **Parlivo** | 4-stage agent pipeline (Analyze, Strategize, Draft, Critique) handling 5k+ interactions per customer per month across 5 channels | `FastAPI` `Gemini` `BullMQ` |
+| **[Wayloom](https://wayloom-ai.com)** | Multi-agent platform for cognitive assessment. Automates 10+ structured tasks and replaces a 60–90 minute paper workflow with a self-guided digital one. I built the scoring engine and the eval protocol that checks agent output against expert-labeled ground truth. | `LangGraph` `Next.js` `PostgreSQL` |
+| **[Prospecter](https://prospecter.io)** | Multi-tenant B2B SaaS for AI outbound. Went from zero to 15 paying customers in 20 days. I led a team of four and owned the async job pipeline behind the long-running agent workloads. | `NestJS` `Claude API` `Redis` `Azure` |
+| **Parlivo** | A 4-stage agent pipeline — Analyze, Strategize, Draft, Critique — running 5k+ interactions per customer per month across 5 channels. 64 data models, which taught me a lot about migrations. | `FastAPI` `Gemini` `BullMQ` |
+| **Drchopp** | An autonomous commerce agent wired into Shopify and CJDropshipping. Does product research, supplier sourcing, SEO copy, campaign automation. 10k+ organic interactions, zero ad spend. | `Node.js` `LLM tooling` |
+
+<br/>
+
+## The part you can't see
+
+Most of what I build ships under NDA or lives in product repos that will never be public. The cards below only know about my public repos, so here's the honest shape of the whole thing:
+
+<!-- PRIVATE-STATS:START -->
+```text
+Repositories        71 total, 47 private (66%)
+Last 12 months      1,368 contributions, 91% in private repos
+Active this year    21 repos pushed to
+
+TypeScript        ██████████████░░░░░░░░░░░  56.0%
+Python            ████░░░░░░░░░░░░░░░░░░░░░  15.2%
+Jupyter Notebook  ████░░░░░░░░░░░░░░░░░░░░░  15.1%
+JavaScript        ███░░░░░░░░░░░░░░░░░░░░░░  11.9%
+```
+
+<sub>Counted across public <em>and</em> private repos, refreshed daily by <a href="./.github/workflows/profile-cards.yml">a workflow</a>. Aggregates only, no private repo is named.</sub>
+<!-- PRIVATE-STATS:END -->
 
 <br/>
 
@@ -41,6 +64,8 @@ Backend architecture   Multi-tenant data models, async job pipelines, DDD
 Reliability            Retry semantics, idempotency keys, rate-limit backoff
 Ship to production     Docker, CI/CD, Stripe billing, observability
 ```
+
+If I had to pick the skill I lean on most, it's drawing the boundary between what the model decides and what the code decides. Almost every agent bug I've chased came from putting that line in the wrong place.
 
 <br/>
 
@@ -73,13 +98,27 @@ Ship to production     Docker, CI/CD, Stripe billing, observability
 
 <br/>
 
+## Some things that went well
+
+- **NSF I-Corps**, University of Michigan track — accepted 2026
+- **3rd place**, GR DeepTech Competition 2026
+- **Start Garden 100** — advanced from Top 100 to Top 50
+- **IEEE Xtreme 15.0** — global rank 559 of 2,589 teams
+- Wayloom featured by the **GVSU College of Computing** (03/2026)
+- Backed by the **Anthropic Startup Program**, **NVIDIA Inception**, **Microsoft for Startups**, and **GitHub for Startups**
+- **Web Summit Qatar** Alpha Program
+- 3rd place, Orange Summer Challenge · 4th place, Metaverse Tunisian Summit
+- **Chair, IEEE EMBS Tunisia Section** (2025–2026), after two years as General Secretary
+- M.S. Health Informatics & Bioinformatics, GVSU — GPA 3.83/4.00
+
+<br/>
+
 ## GitHub
 
 <!--
   These SVGs are generated by .github/workflows/profile-cards.yml and committed
   into this repo, so they are served by raw.githubusercontent.com and cannot be
-  rate-limited by a third-party host. They stay broken until the workflow's
-  first successful run.
+  rate-limited by a third-party host.
 -->
 
 <div align="center">
@@ -132,8 +171,8 @@ Ship to production     Docker, CI/CD, Stripe billing, observability
 
 <div align="center">
 
-**Open to conversations about agentic systems, clinical AI, and anything that has to run reliably at 3am.**
+**Always up for a conversation about agentic systems, clinical AI, or anything that has to hold up unattended at 3am.**
 
-<sub>Most of my strongest work lives in private product repos. Happy to walk through architecture on request.</sub>
+<sub>If something here is relevant to what you're building, email me — I'm happy to walk through the architecture of the private work.</sub>
 
 </div>

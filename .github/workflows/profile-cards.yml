@@ -14,18 +14,39 @@ jobs:
       contents: write
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
-      # One pass with no THEME generates every theme, including the
-      # github_dark and default folders the README references. Running the
-      # action twice does not work: each invocation replaces the whole
-      # profile-summary-card-output directory rather than adding to it.
+      # SUMMARY_GITHUB_TOKEN is a PAT that can read private repos, so the
+      # language donuts reflect all 70+ repos rather than only the public ones.
+      # Falls back to the built-in token, which sees public repos only.
       - uses: vn7n24fzkq/github-profile-summary-cards@release
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.SUMMARY_GITHUB_TOKEN || secrets.GITHUB_TOKEN }}
         with:
           USERNAME: ${{ github.repository_owner }}
           BRANCH_NAME: "main"
           UTC_OFFSET: -4
           EXCLUDE: "HTML,CSS,SCSS,Dockerfile"
           AUTO_PUSH: true
+
+      # The card action pushed a commit of its own, so re-sync before editing.
+      - name: Refresh working tree
+        run: git pull --rebase origin main
+
+      - name: Update private-work stats block
+        env:
+          GITHUB_TOKEN: ${{ secrets.SUMMARY_GITHUB_TOKEN || secrets.GITHUB_TOKEN }}
+          USERNAME: ${{ github.repository_owner }}
+        run: node .github/scripts/private-stats.mjs
+
+      - name: Commit stats
+        run: |
+          if git diff --quiet README.md; then
+            echo "No stats change."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git commit -m "Refresh private-work stats"
+          git push
