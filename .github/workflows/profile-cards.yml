@@ -16,7 +16,10 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      # Dark theme cards
+      # One pass with no THEME generates every theme, including the
+      # github_dark and default folders the README references. Running the
+      # action twice does not work: each invocation replaces the whole
+      # profile-summary-card-output directory rather than adding to it.
       - uses: vn7n24fzkq/github-profile-summary-cards@release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -26,16 +29,3 @@ jobs:
           UTC_OFFSET: -4
           EXCLUDE: "HTML,CSS,SCSS,Dockerfile"
           AUTO_PUSH: true
-          THEME: "github_dark"
-
-      # Light theme cards
-      - uses: vn7n24fzkq/github-profile-summary-cards@release
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          USERNAME: ${{ github.repository_owner }}
-          BRANCH_NAME: "main"
-          UTC_OFFSET: -4
-          EXCLUDE: "HTML,CSS,SCSS,Dockerfile"
-          AUTO_PUSH: true
-          THEME: "default"
