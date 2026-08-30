@@ -36,7 +36,7 @@ jobs:
       - name: Update private-work stats block
         env:
           GITHUB_TOKEN: ${{ secrets.SUMMARY_GITHUB_TOKEN || secrets.GITHUB_TOKEN }}
-          USERNAME: ${{ github.repository_owner }}
+          PROFILE_USER: ${{ github.repository_owner }}
         run: node .github/scripts/private-stats.mjs
 
       - name: Commit stats

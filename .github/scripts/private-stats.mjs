@@ -8,8 +8,8 @@
 // No repo names, descriptions, commit messages, or SHAs ever reach the README.
 
 const TOKEN = process.env.GITHUB_TOKEN;
-const USER = process.env.USERNAME;
-if (!TOKEN || !USER) throw new Error('GITHUB_TOKEN and USERNAME are required');
+const USER = process.env.PROFILE_USER;
+if (!TOKEN || !USER) throw new Error('GITHUB_TOKEN and PROFILE_USER are required');
 
 async function gql(query, variables = {}) {
   const res = await fetch('https://api.github.com/graphql', {
@@ -33,8 +33,8 @@ async function allRepos() {
   let cursor = null;
   do {
     const data = await gql(
-      `query($cursor: String) {
-         viewer {
+      `query($cursor: String, $login: String!) {
+         user(login: $login) {
            repositories(first: 100, after: $cursor, ownerAffiliations: [OWNER],
                         isFork: false, orderBy: {field: PUSHED_AT, direction: DESC}) {
              pageInfo { hasNextPage endCursor }
@@ -48,9 +48,9 @@ async function allRepos() {
            }
          }
        }`,
-      { cursor },
+      { cursor, login: USER },
     );
-    const page = data.viewer.repositories;
+    const page = data.user.repositories;
     out.push(...page.nodes);
     cursor = page.pageInfo.hasNextPage ? page.pageInfo.endCursor : null;
   } while (cursor);
@@ -58,19 +58,33 @@ async function allRepos() {
 }
 
 const contrib = (
-  await gql(`{
-    viewer {
-      contributionsCollection {
-        restrictedContributionsCount
-        contributionCalendar { totalContributions }
-      }
-    }
-  }`)
-).viewer.contributionsCollection;
+  await gql(
+    `query($login: String!) {
+       user(login: $login) {
+         contributionsCollection {
+           restrictedContributionsCount
+           contributionCalendar { totalContributions }
+         }
+       }
+     }`,
+    { login: USER },
+  )
+).user.contributionsCollection;
 
 const repos = await allRepos();
 const priv = repos.filter((r) => r.isPrivate).length;
 const total = repos.length;
+
+// Without a PAT that can read private repos, every number below would describe
+// only the public half. Publishing that as the whole picture is worse than
+// publishing nothing, so leave the existing block untouched.
+if (priv === 0) {
+  console.log(
+    'private-stats: token cannot see private repos (set SUMMARY_GITHUB_TOKEN). ' +
+      'Leaving the existing block unchanged.',
+  );
+  process.exit(0);
+}
 
 // Language mix across everything, weighted by bytes.
 const bytes = new Map();
